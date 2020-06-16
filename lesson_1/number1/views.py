@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+from number1.models import User
+
+
+def number1_page(request):
+    return render(request, 'index.html', {'users': User.objects.all()})

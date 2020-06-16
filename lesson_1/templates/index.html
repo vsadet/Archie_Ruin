@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<h1>Пользователи</h1>
+{% for user in users %}
+    <div class="btn btn-success btn-lg">
+        Имена: {{ user.first_name }}
+        <br>
+        Фамилии: {{ user.last_name }}
+    </div>
+<br><br>
+{% endfor %}
+</body>
+</html>
